@@ -1,0 +1,15 @@
+mat-form-field,
+textarea {
+  width: 100%;
+}
+mat-card {
+  margin-top: 30px;
+}
+.previewButton {
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}

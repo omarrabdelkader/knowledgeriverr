@@ -1,0 +1,48 @@
+<mat-card>
+  <h3>Contact us</h3>
+  <form [formGroup]="form" (submit)="onSubmitMessage()">
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="name"
+        placeholder="Name"
+        formControlName="name"
+      />
+      <mat-error *ngIf="form.get('name')?.invalid"
+        >Please fill this field</mat-error
+      >
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+        matInput
+        type="email"
+        name="email"
+        placeholder="Email"
+        formControlName="email"
+      />
+      <mat-error *ngIf="form.get('email')?.invalid"
+        >Please fill this field</mat-error
+      >
+    </mat-form-field>
+
+    <mat-form-field>
+      <textarea
+        matInput
+        type="text"
+        name="message"
+        placeholder="Message"
+        formControlName="message"
+        class="message"
+        rows="15"
+        cols="50"
+      >
+      </textarea>
+      <mat-error *ngIf="form.get('message')?.invalid"
+        >Please fill this field</mat-error
+      >
+    </mat-form-field>
+    <button mat-button class="submit-button" type="submit">Send</button>
+  </form></mat-card
+>

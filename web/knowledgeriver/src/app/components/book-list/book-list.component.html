@@ -1,0 +1,23 @@
+<section>
+  <div class="books-collection">
+    <ul *ngFor="let book of books">
+      <li>
+        <img
+          src="https://i.ibb.co/kmzWDFf/49552-SY475.jpg"
+          alt="none"
+          [routerLink]="['/book', book.id]"
+        />
+      </li>
+      <li>{{ book.title }}</li>
+      <li>{{ book.author }}</li>
+      <li>{{ book.price }}</li>
+      <button mat-button [routerLink]="['/book', book.id]">Check</button>
+    </ul>
+  </div>
+  <mat-paginator
+    [length]="totalBooks"
+    [pageSize]="booksPerPage"
+    [pageSizeOptions]="pageSizeOptions"
+    (page)="onPageChange($event)"
+  ></mat-paginator>
+</section>

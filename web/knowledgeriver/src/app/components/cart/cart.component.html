@@ -1,0 +1,14 @@
+<ul *ngFor="let product of products">
+  <li><img src="https://i.ibb.co/kmzWDFf/49552-SY475.jpg" /></li>
+  <li>
+    <p>{{ product.title }}</p>
+  </li>
+  <li>
+    <p>{{ product.author }}</p>
+  </li>
+  <li>
+    <p>{{ product.price }}EGP</p>
+  </li>
+  <li>Total price: ${{ CalculateTotalPrice() }}</li>
+</ul>
+<h2 *ngIf="products.length < 1">CART IS EMPTY</h2>

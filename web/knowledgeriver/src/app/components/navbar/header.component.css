@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;400&family=Poppins:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  list-style: none;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.h1-logo-collection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.logo {
+  width: 70px;
+}
+
+/* li (list) */
+
+.links li a:hover {
+  color: gray;
+}
+
+.links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+/* download button */
+
+.contactus-button {
+  padding: 5px 25px;
+  background-color: Transparent;
+  border-radius: 50px;
+  border: 2px solid black;
+  color: black;
+}
+
+.contactus-button:hover {
+  background-color: gray;
+}
+
+/* drop-down button */
+
+.extra-button {
+  padding-right: 20px;
+  background-color: transparent;
+  border: none;
+  text-align: end;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  background-color: transparent;
+  width: 100px;
+}
+
+.dropdown-menu a {
+  font-size: 10px;
+}
+
+.arrow-img {
+  width: 10px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+}

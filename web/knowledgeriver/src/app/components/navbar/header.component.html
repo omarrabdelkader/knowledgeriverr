@@ -1,0 +1,46 @@
+<header>
+  <div class="h1-logo-collection">
+    <img
+      class="logo"
+      src="https://i.ibb.co/Y8gV60L/600ddbdcd616b5ef5104c5b7f8ce246d.png"
+      routerLink="/"
+    />
+    <h1>Knowledge River</h1>
+  </div>
+  <nav>
+    <ul class="links">
+      <li>
+        <a routerLink="/">Home</a>
+      </li>
+      <li>
+        <a routerLink="/books">Books</a>
+      </li>
+      <li>
+        <a routerLink="/create">Create</a>
+      </li>
+      <li>
+        <a routerLink="/cart">Cart</a>
+      </li>
+      <li>
+        <div class="dropdown">
+          <button class="extra-button" (click)="onDropMenu()">
+            Extra
+            <img
+              src="https://i.ibb.co/MsTkc8r/down-arrow.png"
+              alt="arrow-down"
+              class="arrow-img"
+            />
+          </button>
+          <div class="dropdown-menu" *ngIf="isMenuOpened">
+            <a routerLink="/contactus">Contact us</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <button class="contactus-button" routerLink="/contactus">
+          Contact Us
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,28 @@
+<section>
+  <img
+    src="https://i.ibb.co/dJnpJWs/download.jpg
+  "
+  />
+
+  <div>
+    <li>
+      <h2>{{ book.title }}</h2>
+    </li>
+    <li>
+      <h3>{{ book.author }}</h3>
+    </li>
+    <li>
+      <p>{{ book.price }}</p>
+    </li>
+    <li>
+      <p>{{ book.description }}</p>
+    </li>
+    <div class="buttons">
+      <button mat-button (click)="onAddToCart(book)">Cart</button>
+      <button mat-button (click)="onDeleteBook(book.id)">Remove Book</button>
+      <button mat-button [routerLink]="['/update', book.id]">
+        Update Book
+      </button>
+    </div>
+  </div>
+</section>
